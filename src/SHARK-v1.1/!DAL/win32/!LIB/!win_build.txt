@@ -1,0 +1,1 @@
+http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vcug98/html/_asug_building_a_project_from_the_command_line.asp

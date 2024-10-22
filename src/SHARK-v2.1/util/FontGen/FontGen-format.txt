@@ -1,0 +1,22 @@
+HEADER:
+-------
+
+ 3 bytes:   "FNT"                  - signature
+ 1 bytes:   "n"                    - depth
+ 2 bytes:   0xHI 0xLO              - width
+ 2 bytes:   0xHI 0xLO              - height
+ 2 bytes:   0xHI 0xLO              - char_count
+ x bytes:   { 
+              0xXX 
+            } [char_count]         - width of each character
+
+ x bytes    { 
+              0xHI 0xLO 0xHI 0xLO 
+            } [char_count - 256]   - unicode table (chr > 256)
+
+DATA:
+-----
+
+ x bytes:   0xXX 0xXX 0xXX 0xXX 0xXX 0xXX 0xXX 0xXX
+            0xXX 0xXX 0xXX 0xXX 0xXX 0xXX 0xXX 0xXX
+

@@ -1,0 +1,20 @@
+/*************************************************************************
+ *
+ * Copyright (c) 2002+ MobileWizardry
+ * All rights reservered.
+ *
+ *************************************************************************/
+
+/*
+ * @(#)bld.inf
+ *
+ * -- Aaron Ardiri (mailto:aaron_ardiri@mobilewizardry.com)
+ */
+
+PRJ_MMPFILES
+SHARK.mmp
+
+PRJ_PLATFORMS
+thumb
+
+/********************************* E O F *********************************/

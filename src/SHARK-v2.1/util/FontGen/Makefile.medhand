@@ -1,0 +1,21 @@
+all:
+	#  72 dpi  -  11, 12, 14
+	#  96 dpi
+	# 144 dpi
+	# 192 dpi
+
+	java -cp mono FontGen ARIAL 11 PLAIN      arial-11-m.fnt
+	java -cp mono FontGen ARIAL 12 PLAIN      arial-12-m.fnt
+	java -cp mono FontGen ARIAL 14 PLAIN      arial-14-m.fnt
+
+	java -cp mono FontGen ARIAL 11 BOLD       arial-11b-m.fnt
+	java -cp mono FontGen ARIAL 12 BOLD       arial-12b-m.fnt
+	java -cp mono FontGen ARIAL 14 BOLD       arial-14b-m.fnt
+
+	java -cp mono FontGen ARIAL 11 ITALIC     arial-11i-m.fnt
+	java -cp mono FontGen ARIAL 12 ITALIC     arial-12i-m.fnt
+	java -cp mono FontGen ARIAL 14 ITALIC     arial-14i-m.fnt
+
+	java -cp mono FontGen ARIAL 11 BOLDITALIC arial-11bi-m.fnt
+	java -cp mono FontGen ARIAL 12 BOLDITALIC arial-12bi-m.fnt
+	java -cp mono FontGen ARIAL 14 BOLDITALIC arial-14bi-m.fnt

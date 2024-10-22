@@ -1,0 +1,121 @@
+# ***********************************************************************
+# 
+# Copyright (c) 2001+ MobileWizardry
+# All rights reserved.
+#
+# ***********************************************************************/
+
+#
+# @(#)Makefile
+# 
+
+BBXNDK = /opt/bbndk-2.0.1
+
+# environment
+QNX_TARGET        = $(BBXNDK)/target/qnx6
+QNX_HOST          = $(BBXNDK)/host/macosx/x86
+PATH              = /bin:/usr/bin:$(QNX_HOST)/usr/bin
+QNX_CONFIGURATION = ~/Library/Research\ In\ Motion/BlackBerry\ Native\ SDK
+DYLD_LIBRARY_PATH = $(BBXNDK)/host/macosx/x86/usr/lib
+MAKEFLAGS         = "-I$(QNX_TARGET)/usr/include"
+
+export QNX_TARGET QNX_HOST QNX_CONFIGURATION MAKEFLAGS DYLD_LIBRARY_PATH PATH
+
+# compiler commands
+CC	= qcc
+AR	= ntoarmv7-ar
+
+# compiler flags
+CCFLAGX = -Vgcc_ntoarmv7 -c -O -Wc,-Wall -fstack-protector-all -fPIE \
+          -D_FORTIFY_SOURCE=2 -DNDEBUG -DVARIANT_le -DVARIANT_v7 \
+          -DBUILDENV_qss -EL \
+          -I$(QNX_TARGET)/../target-override/usr/include  \
+          -I$(QNX_TARGET)/usr/include -I.
+CCFLAGS = -O2 -Wall -Wno-multichar -Wno-strict-aliasing $(CCFLAGX) $(FLAGS)
+
+# outputs
+EXT_DIR = ../extensions
+CORE_EXT = $(EXT_DIR)/SHARK-core.o
+STR_EXT  = $(EXT_DIR)/SHARK-string.o
+FB_EXT   = $(EXT_DIR)/SHARK-fb.o
+SFX_EXT  = $(EXT_DIR)/SHARK-sfx.o
+
+EXT     = $(CORE_EXT) $(MEM_EXT) $(FB_EXT) $(STR_EXT) $(SFX_EXT)
+
+SHK_OBJ = DAL.o $(EXT) 
+DBG_OBJ = 
+
+OBJS	= $(SHK_OBJ) 
+
+default:
+	rm -rf *.a
+
+	# debug builds
+	
+	echo "#define TARGET_BBX"               >  ../SHARK-cfg.h
+	echo ""                                 >> ../SHARK-cfg.h
+	echo "#define LOG_DISABLE            1" >> ../SHARK-cfg.h
+	echo "#define ACCELEROMETER_DISABLE  1" >> ../SHARK-cfg.h
+	echo "#define PLATFORM_ORIENTATION   1" >> ../SHARK-cfg.h
+	echo ""                                 >> ../SHARK-cfg.h
+	echo "#define BBX_HIRES              1" >> ../SHARK-cfg.h
+	echo "#define BBX_PIXEL_DOUBLE       0" >> ../SHARK-cfg.h
+	FLAGS="-D_DEBUG -g" make -f Makefile.caveman-HD libSHARK-debug.a	
+	mv libSHARK-debug.a libSHARK-debug.no_log.a
+	make -f Makefile.caveman-HD clean
+
+	echo "#define TARGET_BBX"               >  ../SHARK-cfg.h
+	echo ""                                 >> ../SHARK-cfg.h
+	echo "#define LOG_DISABLE            0" >> ../SHARK-cfg.h
+	echo "#define ACCELEROMETER_DISABLE  1" >> ../SHARK-cfg.h
+	echo "#define PLATFORM_ORIENTATION   1" >> ../SHARK-cfg.h
+	echo ""                                 >> ../SHARK-cfg.h
+	echo "#define BBX_HIRES              1" >> ../SHARK-cfg.h
+	echo "#define BBX_PIXEL_DOUBLE       0" >> ../SHARK-cfg.h
+	FLAGS="-D_DEBUG -g" make -f Makefile.caveman-HD libSHARK-debug.a	
+	make -f Makefile.caveman-HD clean
+
+	# release builds
+	
+	echo "#define TARGET_BBX"               >  ../SHARK-cfg.h
+	echo ""                                 >> ../SHARK-cfg.h
+	echo "#define LOG_DISABLE            1" >> ../SHARK-cfg.h
+	echo "#define ACCELEROMETER_DISABLE  1" >> ../SHARK-cfg.h
+	echo "#define PLATFORM_ORIENTATION   1" >> ../SHARK-cfg.h
+	echo ""                                 >> ../SHARK-cfg.h
+	echo "#define BBX_HIRES              1" >> ../SHARK-cfg.h
+	echo "#define BBX_PIXEL_DOUBLE       0" >> ../SHARK-cfg.h
+	FLAGS="" make -f Makefile.caveman-HD libSHARK.a	
+	mv libSHARK.a libSHARK-no_log.a
+	make -f Makefile.caveman-HD clean
+
+	echo "#define TARGET_BBX"               >  ../SHARK-cfg.h
+	echo ""                                 >> ../SHARK-cfg.h
+	echo "#define LOG_DISABLE            0" >> ../SHARK-cfg.h
+	echo "#define ACCELEROMETER_DISABLE  1" >> ../SHARK-cfg.h
+	echo "#define PLATFORM_ORIENTATION   1" >> ../SHARK-cfg.h
+	echo ""                                 >> ../SHARK-cfg.h
+	echo "#define BBX_HIRES              1" >> ../SHARK-cfg.h
+	echo "#define BBX_PIXEL_DOUBLE       0" >> ../SHARK-cfg.h
+	FLAGS="" make -f Makefile.caveman-HD libSHARK.a	
+	make -f Makefile.caveman-HD clean
+
+libSHARK.a: $(OBJS)
+	$(AR) rc libSHARK.a $(OBJS)
+
+libSHARK-debug.a: $(OBJS) $(DBG_OBJ)
+	$(AR) rc libSHARK-debug.a $(OBJS) $(DBG_OBJ)
+
+clean:
+	rm -f $(OBJS) $(DBG_OBJ)
+	rm -f ../SHARK-cfg.h
+
+distclean:
+	make -f Makefile.caveman-HD clean
+	rm -f libSHARK*.a
+
+# compile rules
+.SUFFIXES: .c .o
+
+.c.o:
+	$(CC) -c -o $@ $(CCFLAGS) $<

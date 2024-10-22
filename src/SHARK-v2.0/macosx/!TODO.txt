@@ -1,0 +1,13 @@
+TODO:
+-----
+
+- streaming audio
+  >> check out "CoreAudio" as a possible implementation
+
+- PixMap
+  >> depreciated starting with mac osx 10.4, need to find alternative implementation
+
+BUGS:
+-----
+
+\\ none

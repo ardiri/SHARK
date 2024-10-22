@@ -1,0 +1,71 @@
+# ***********************************************************************
+# 
+# Copyright (c) 2001+ MobileWizardry
+# All rights reserved.
+#
+# ***********************************************************************/
+
+#
+# @(#)Makefile
+# 
+
+default:
+	echo "#define TARGET_IOS"                         > ../SHARK-cfg.h
+	echo ""                                          >> ../SHARK-cfg.h
+	echo "#define LOG_DISABLE                     1" >> ../SHARK-cfg.h
+	echo "#define ACCELEROMETER_DISABLE           1" >> ../SHARK-cfg.h
+	echo "#define PLATFORM_ORIENTATION            1" >> ../SHARK-cfg.h
+	echo ""                                          >> ../SHARK-cfg.h
+	echo "#define IOS_HIRES                       0" >> ../SHARK-cfg.h
+	echo "#define IOS_PIXEL_DOUBLE                1" >> ../SHARK-cfg.h
+	echo "#define IOS_ALTERNATE_BUFFERS           0" >> ../SHARK-cfg.h
+	xcodebuild -sdk iphoneos4.2 
+	mv build/Release-iphoneos/libSHARK.a libSHARK-iphoneos.a
+	make clean
+
+	echo "#define TARGET_IOS"                         > ../SHARK-cfg.h
+	echo ""                                          >> ../SHARK-cfg.h
+	echo "#define LOG_DISABLE                     0" >> ../SHARK-cfg.h
+	echo "#define ACCELEROMETER_DISABLE           1" >> ../SHARK-cfg.h
+	echo "#define PLATFORM_ORIENTATION            1" >> ../SHARK-cfg.h
+	echo ""                                          >> ../SHARK-cfg.h
+	echo "#define IOS_HIRES                       0" >> ../SHARK-cfg.h
+	echo "#define IOS_PIXEL_DOUBLE                1" >> ../SHARK-cfg.h
+	echo "#define IOS_ALTERNATE_BUFFERS           0" >> ../SHARK-cfg.h
+	xcodebuild -sdk iphoneos4.2 
+	mv build/Release-iphoneos/libSHARK.a libSHARK-iphoneos-log.a
+	make clean
+
+	echo "#define TARGET_IOS"                         > ../SHARK-cfg.h
+	echo ""                                          >> ../SHARK-cfg.h
+	echo "#define LOG_DISABLE                     1" >> ../SHARK-cfg.h
+	echo "#define ACCELEROMETER_DISABLE           1" >> ../SHARK-cfg.h
+	echo "#define PLATFORM_ORIENTATION            1" >> ../SHARK-cfg.h
+	echo ""                                          >> ../SHARK-cfg.h
+	echo "#define IOS_HIRES                       0" >> ../SHARK-cfg.h
+	echo "#define IOS_PIXEL_DOUBLE                1" >> ../SHARK-cfg.h
+	echo "#define IOS_ALTERNATE_BUFFERS           0" >> ../SHARK-cfg.h
+	xcodebuild -sdk iphonesimulator4.2 
+	mv build/Release-iphonesimulator/libSHARK.a libSHARK-iphonesim.a
+	make clean
+
+	echo "#define TARGET_IOS"                         > ../SHARK-cfg.h
+	echo ""                                          >> ../SHARK-cfg.h
+	echo "#define LOG_DISABLE                     0" >> ../SHARK-cfg.h
+	echo "#define ACCELEROMETER_DISABLE           1" >> ../SHARK-cfg.h
+	echo "#define PLATFORM_ORIENTATION            1" >> ../SHARK-cfg.h
+	echo ""                                          >> ../SHARK-cfg.h
+	echo "#define IOS_HIRES                       0" >> ../SHARK-cfg.h
+	echo "#define IOS_PIXEL_DOUBLE                1" >> ../SHARK-cfg.h
+	echo "#define IOS_ALTERNATE_BUFFERS           0" >> ../SHARK-cfg.h
+	xcodebuild -sdk iphonesimulator4.2 
+	mv build/Release-iphonesimulator/libSHARK.a libSHARK-iphonesim-log.a
+	make clean
+
+clean:
+	rm -rf build
+	rm -f ../SHARK-cfg.h
+
+distclean:
+	make clean
+	rm -f libSHARK*.a

@@ -1,0 +1,11 @@
+KeyCurrentState() conflicting
+
+  all:        KeyScrollUp/KeyScrollDown key masks never set
+  Sony NX:    jog dial up/down reports 0x10000000 and 0x20000000
+  Sony (68k): jog dial up/down reports no value
+  Tapwave:    action buttons can conflict with these values.
+
+Tungsten|T3:
+
+  hawkeye SDK, need to adjust for status bar/hiding showing based
+  on availability of API (see 'Smrt' resource documentation). 

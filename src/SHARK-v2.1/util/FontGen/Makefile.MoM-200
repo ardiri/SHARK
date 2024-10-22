@@ -1,0 +1,22 @@
+all:
+	java -cp mono FontGen HELVETICA 18 PLAIN  font-map.fnt
+
+	java -cp mono FontGen ARIAL 21 PLAIN      font-tiny-plain.fnt
+	java -cp mono FontGen ARIAL 24 PLAIN      font-normal-plain.fnt
+	java -cp mono FontGen ARIAL 26 PLAIN      font-medium-plain.fnt
+	java -cp mono FontGen ARIAL 28 PLAIN      font-large-plain.fnt
+
+	java -cp mono FontGen ARIAL 21 BOLD       font-tiny-bold.fnt
+	java -cp mono FontGen ARIAL 24 BOLD       font-normal-bold.fnt
+	java -cp mono FontGen ARIAL 26 BOLD       font-medium-bold.fnt
+	java -cp mono FontGen ARIAL 28 BOLD       font-large-bold.fnt
+
+	java -cp mono FontGen ARIAL 21 ITALIC     font-tiny-italic.fnt
+	java -cp mono FontGen ARIAL 24 ITALIC     font-normal-italic.fnt
+	java -cp mono FontGen ARIAL 26 ITALIC     font-medium-italic.fnt
+	java -cp mono FontGen ARIAL 28 ITALIC     font-large-italic.fnt
+
+	java -cp mono FontGen ARIAL 21 BOLDITALIC font-tiny-bolditalic.fnt
+	java -cp mono FontGen ARIAL 24 BOLDITALIC font-normal-bolditalic.fnt
+	java -cp mono FontGen ARIAL 26 BOLDITALIC font-medium-bolditalic.fnt
+	java -cp mono FontGen ARIAL 28 BOLDITALIC font-large-bolditalic.fnt

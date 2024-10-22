@@ -1,0 +1,98 @@
+/*************************************************************************
+ * Configuration - GENERIC
+ *************************************************************************/
+
+// LOG_DISABLE
+// SHARK logs internally to either the application console or a log file
+// that contains debugging information to assist with the development of
+// the applications - to ensure performance is maintained, this option 
+// should be disabled when building versions for distribution.
+//
+// 1 - disable SHARK internal logging
+// 0 -  enable SHARK internal logging
+
+// ACCELEROMETER_DISABLE
+// disable the use of the accelerometer if available - an optimization 
+// to prevent an uneccessary thread and processing, especially when the
+// application has no requirement for this functionality.
+//
+// 1 - disable accelerometer use
+// 0 -  enable accelerometer use
+
+// PLATFORM_ORIENTATION
+// define the requirements for application orientation; either portrait
+// or landscape, on square screens, it is assumed the default orientation
+// will be sufficient.
+// 
+// 0 - ensure application is portrait
+// 1 - ensure application is landscape
+
+/*************************************************************************
+ * Configuration : IOS (iPod Touch, iPhone, iPad)
+ *************************************************************************/
+
+// IOS_HIRES
+// _LCD sub-system to use 1024x768 instead of the default 480x320 resolution
+//
+// 0 - 480x320 resolution
+// 1 - 1024x768 resolution
+
+// IOS_PIXEL_DOUBLE
+// perform pixel doubling of the framebuffer window at hardware level.
+//
+// 0 - ensure native resolution
+// 1 - ensure pixel doubling resolution
+
+// IOS_ALTERNATE_BUFFERS
+// use two buffers for display engine - this prevents "tearing" on the
+// display; however applications must draw the whole frame every iteration
+// this is a requirement when applications fresh the entire frame between
+// subsequent calls to update the display.
+
+/*************************************************************************
+ * Configuration : Web OS (Palm Pre, TouchPad)
+ *************************************************************************/
+
+// WEBOS_HIRES
+// _LCD sub-system to use 1024x768 instead of the default 480x320 resolution
+//
+// 0 - 480x320 resolution
+// 1 - 1024x768 resolution
+
+// WEBOS_PIXEL_DOUBLE
+// perform pixel doubling of the framebuffer window at hardware level.
+//
+// 0 - ensure native resolution
+// 1 - ensure pixel doubling resolution
+
+/*************************************************************************
+ * Configuration : Mac OSX
+ *************************************************************************/
+
+// MACOSX_HIRES
+// _LCD sub-system to use 1024x768 instead of the default 480x320 resolution
+//
+// 0 - 480x320 resolution
+// 1 - 1024x768 resolution
+
+// MACOSX_PIXEL_DOUBLE
+// perform pixel doubling of the framebuffer window at hardware level.
+//
+// 0 - ensure native resolution
+// 1 - ensure pixel doubling resolution
+
+/*************************************************************************
+ * Configuration : BBX (Playbook, BlackBerry 10)
+ *************************************************************************/
+
+// BBX_HIRES
+// _LCD sub-system to use 1024x768 instead of the default 480x320 resolution
+//
+// 0 - 480x320 resolution
+// 1 - 1024x768 resolution
+
+// BBX_PIXEL_DOUBLE
+// perform pixel doubling of the framebuffer window at hardware level.
+//
+// 0 - ensure native resolution
+// 1 - ensure pixel doubling resolution

@@ -1,0 +1,1 @@
+CCFLAGS = -mcpu=cortex-a8 -mfpu=neon -mfloat-abi=softfp

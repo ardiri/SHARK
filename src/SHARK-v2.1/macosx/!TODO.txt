@@ -1,0 +1,14 @@
+TODO:
+-----
+
+- streaming audio
+  >> check out "CoreAudio" as a possible implementation
+
+- preferences
+  >> MacOS has a preference ability, see ~/Library/Preferences
+
+BUGS:
+-----
+
+- when clicking on apple tool bar and/or window controls, the display
+  repaint occurs at (0,0) on the display.

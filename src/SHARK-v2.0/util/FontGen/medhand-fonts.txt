@@ -1,0 +1,540 @@
+java FontGen 1 ARIAL 9  PLAIN      arial-9-plain.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial 9
+
+
+  pixels (w) = 2160
+  pixels (h) = 12
+  kerning    = 2
+
+java FontGen 1 ARIAL 10 PLAIN      arial-10-plain.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial 10
+
+
+  pixels (w) = 2304
+  pixels (h) = 13
+  kerning    = 2
+
+java FontGen 1 ARIAL 11 PLAIN      arial-11-plain.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial 11
+
+
+  pixels (w) = 2320
+  pixels (h) = 14
+  kerning    = 2
+
+java FontGen 1 ARIAL 12 PLAIN      arial-12-plain.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial 12
+
+
+  pixels (w) = 2576
+  pixels (h) = 15
+  kerning    = 2
+
+java FontGen 1 ARIAL 13 PLAIN      arial-13-plain.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial 13
+
+
+  pixels (w) = 3272
+  pixels (h) = 16
+  kerning    = 3
+
+java FontGen 1 ARIAL 14 PLAIN      arial-14-plain.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial 14
+
+
+  pixels (w) = 3424
+  pixels (h) = 17
+  kerning    = 3
+
+java FontGen 1 ARIAL 15 PLAIN      arial-15-plain.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial 15
+
+
+  pixels (w) = 3520
+  pixels (h) = 18
+  kerning    = 3
+
+java FontGen 1 ARIAL 16 PLAIN      arial-16-plain.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial 16
+
+
+  pixels (w) = 3680
+  pixels (h) = 19
+  kerning    = 3
+
+java FontGen 1 ARIAL 17 PLAIN      arial-17-plain.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial 17
+
+
+  pixels (w) = 4360
+  pixels (h) = 20
+  kerning    = 4
+
+java FontGen 1 ARIAL 9  BOLD       arial-9-bold.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold 9
+
+
+  pixels (w) = 2168
+  pixels (h) = 12
+  kerning    = 2
+
+java FontGen 1 ARIAL 10 BOLD       arial-10-bold.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold 10
+
+
+  pixels (w) = 2312
+  pixels (h) = 13
+  kerning    = 2
+
+java FontGen 1 ARIAL 11 BOLD       arial-11-bold.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold 11
+
+
+  pixels (w) = 2432
+  pixels (h) = 14
+  kerning    = 2
+
+java FontGen 1 ARIAL 12 BOLD       arial-12-bold.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold 12
+
+
+  pixels (w) = 2576
+  pixels (h) = 15
+  kerning    = 2
+
+java FontGen 1 ARIAL 13 BOLD       arial-13-bold.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold 13
+
+
+  pixels (w) = 3376
+  pixels (h) = 16
+  kerning    = 3
+
+java FontGen 1 ARIAL 14 BOLD       arial-14-bold.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold 14
+
+
+  pixels (w) = 3552
+  pixels (h) = 17
+  kerning    = 3
+
+java FontGen 1 ARIAL 15 BOLD       arial-15-bold.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold 15
+
+
+  pixels (w) = 3672
+  pixels (h) = 18
+  kerning    = 3
+
+java FontGen 1 ARIAL 16 BOLD       arial-16-bold.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold 16
+
+
+  pixels (w) = 3848
+  pixels (h) = 19
+  kerning    = 3
+
+java FontGen 1 ARIAL 17 BOLD       arial-17-bold.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold 17
+
+
+  pixels (w) = 4512
+  pixels (h) = 20
+  kerning    = 4
+
+java FontGen 1 ARIAL 9  ITALIC     arial-9-italic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Italic 9
+
+
+  pixels (w) = 2312
+  pixels (h) = 12
+  kerning    = 2
+
+java FontGen 1 ARIAL 10 ITALIC     arial-10-italic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Italic 10
+
+
+  pixels (w) = 2440
+  pixels (h) = 13
+  kerning    = 2
+
+java FontGen 1 ARIAL 11 ITALIC     arial-11-italic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Italic 11
+
+
+  pixels (w) = 2656
+  pixels (h) = 14
+  kerning    = 2
+
+java FontGen 1 ARIAL 12 ITALIC     arial-12-italic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Italic 12
+
+
+  pixels (w) = 2824
+  pixels (h) = 15
+  kerning    = 2
+
+java FontGen 1 ARIAL 13 ITALIC     arial-13-italic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Italic 13
+
+
+  pixels (w) = 3496
+  pixels (h) = 16
+  kerning    = 3
+
+java FontGen 1 ARIAL 14 ITALIC     arial-14-italic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Italic 14
+
+
+  pixels (w) = 3672
+  pixels (h) = 17
+  kerning    = 3
+
+java FontGen 1 ARIAL 15 ITALIC     arial-15-italic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Italic 15
+
+
+  pixels (w) = 3776
+  pixels (h) = 18
+  kerning    = 3
+
+java FontGen 1 ARIAL 16 ITALIC     arial-16-italic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Italic 16
+
+
+  pixels (w) = 3904
+  pixels (h) = 19
+  kerning    = 3
+
+java FontGen 1 ARIAL 17 ITALIC     arial-17-italic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Italic 17
+
+
+  pixels (w) = 4640
+  pixels (h) = 20
+  kerning    = 4
+
+java FontGen 1 ARIAL 9  BOLDITALIC arial-9-bolditalic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold Italic 9
+
+
+  pixels (w) = 2208
+  pixels (h) = 12
+  kerning    = 2
+
+java FontGen 1 ARIAL 10 BOLDITALIC arial-10-bolditalic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold Italic 10
+
+
+  pixels (w) = 2336
+  pixels (h) = 13
+  kerning    = 2
+
+java FontGen 1 ARIAL 11 BOLDITALIC arial-11-bolditalic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold Italic 11
+
+
+  pixels (w) = 2672
+  pixels (h) = 14
+  kerning    = 2
+
+java FontGen 1 ARIAL 12 BOLDITALIC arial-12-bolditalic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold Italic 12
+
+
+  pixels (w) = 2880
+  pixels (h) = 15
+  kerning    = 2
+
+java FontGen 1 ARIAL 13 BOLDITALIC arial-13-bolditalic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold Italic 13
+
+
+  pixels (w) = 3608
+  pixels (h) = 16
+  kerning    = 3
+
+java FontGen 1 ARIAL 14 BOLDITALIC arial-14-bolditalic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold Italic 14
+
+
+  pixels (w) = 3760
+  pixels (h) = 17
+  kerning    = 3
+
+java FontGen 1 ARIAL 15 BOLDITALIC arial-15-bolditalic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold Italic 15
+
+
+  pixels (w) = 3896
+  pixels (h) = 18
+  kerning    = 3
+
+java FontGen 1 ARIAL 16 BOLDITALIC arial-16-bolditalic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold Italic 16
+
+
+  pixels (w) = 4088
+  pixels (h) = 19
+  kerning    = 3
+
+java FontGen 1 ARIAL 17 BOLDITALIC arial-17-bolditalic.fnt
+ *
+ * @(#)FontGen.java
+ *
+ * -- Aaron Ardiri  (mailto:aaron@ardiri.com)
+ *
+
+FONT SOURCE:
+  Arial Bold Italic 17
+
+
+  pixels (w) = 4752
+  pixels (h) = 20
+  kerning    = 4
+

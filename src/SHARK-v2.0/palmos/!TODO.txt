@@ -1,0 +1,23 @@
+TODO:
+-----
+
+// none
+
+BUGS:
+-----
+
+- nilEvent
+  >> priority implementation = lockout
+  
+the new nilEvent priority mechanism can actually force an application
+into a never "exitable" loop. nilEvents can be processed; howver, no 
+other events can make it through to the system. there needs to be some
+mechanism implemented that will prevent nilEvents from taking over.
+
+- dynamic input areas
+  >> Tapwave Zodiac, Tungsten T3, Garmin iQue 3600/3600a
+  
+implementation issues with the dynamic input area support. using PINS
+on these devices causes a software reset = un-explainable? the Garmin
+iQue devices dont have sufficient dynamic memory for 320x448 - hence, 
+by default, these devices will only run in legacy mode (320x320).

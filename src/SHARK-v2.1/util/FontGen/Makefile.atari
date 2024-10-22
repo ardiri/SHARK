@@ -1,0 +1,11 @@
+MODE=mono
+
+all:
+	java -cp $(MODE) FontGen Tahoma 11 BOLD  xxxx006a.bin # menu font
+
+	java -cp $(MODE) FontGen Arial   9 PLAIN xxxx0064.bin # 160x normal
+	java -cp $(MODE) FontGen Arial  12 BOLD  xxxx0065.bin # 160x large bold
+	java -cp $(MODE) FontGen Arial  12 PLAIN xxxx0066.bin # 240x normal
+	java -cp $(MODE) FontGen Arial  16 BOLD  xxxx0067.bin # 240x large bold
+	java -cp $(MODE) FontGen Arial  16 PLAIN xxxx0068.bin # 320x normal
+	java -cp $(MODE) FontGen Arial  20 BOLD  xxxx0069.bin # 320x large bold

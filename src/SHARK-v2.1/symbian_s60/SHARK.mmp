@@ -1,0 +1,23 @@
+TARGET		SHARK.LIB
+TARGETTYPE	lib
+UID		0
+
+USERINCLUDE	..
+SOURCEPATH	.
+SOURCE		DAL.cpp
+SOURCEPATH	..\common\libraries
+SOURCE		SHARK-string.c
+SOURCEPATH	..\common\libraries
+SOURCE		SHARK-gfx.c
+SOURCEPATH	..\common\libraries
+SOURCE		SHARK-font.c
+SOURCEPATH	..\common\libraries
+SOURCE		SHARK-sfx.c
+SOURCEPATH	..\common\libraries
+SOURCE		SHARK-gui.c
+SOURCEPATH	..\common\libraries
+SOURCE		SHARK-menu.c
+
+SYSTEMINCLUDE	\epoc32\include \epoc32\include\libc
+
+LIBRARY		estlib.lib

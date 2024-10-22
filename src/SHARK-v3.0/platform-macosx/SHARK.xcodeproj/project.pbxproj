@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B4562BE0E9A59BD00DE6C8C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4562BD0E9A59BD00DE6C8C /* AudioToolbox.framework */; };
+		2B4562BF0E9A59CF00DE6C8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		2B4562C70E9A59FB00DE6C8C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		2B4563000E9A5A9700DE6C8C /* DAL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4562FF0E9A5A9700DE6C8C /* DAL.m */; };
+		2B45632A0E9A5B8700DE6C8C /* SHARK-core.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B4563230E9A5B4400DE6C8C /* SHARK-core.c */; };
+		2B45632B0E9A5B8700DE6C8C /* SHARK-fb.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B4563260E9A5B4400DE6C8C /* SHARK-fb.c */; };
+		2B45632C0E9A5B8700DE6C8C /* SHARK-sfx.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B4563280E9A5B4400DE6C8C /* SHARK-sfx.c */; };
+		2B45632D0E9A5B8700DE6C8C /* SHARK-string.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B4563290E9A5B4400DE6C8C /* SHARK-string.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2B4562B90E9A598E00DE6C8C /* libSHARK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSHARK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B4562BD0E9A59BD00DE6C8C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2B4562FF0E9A5A9700DE6C8C /* DAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAL.m; sourceTree = "<group>"; };
+		2B45630C0E9A5B1200DE6C8C /* DAL-audio.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "DAL-audio.inc"; sourceTree = "<group>"; };
+		2B45630D0E9A5B1200DE6C8C /* DAL-display.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "DAL-display.inc"; sourceTree = "<group>"; };
+		2B45630E0E9A5B1200DE6C8C /* DAL-file.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "DAL-file.inc"; sourceTree = "<group>"; };
+		2B45630F0E9A5B1200DE6C8C /* DAL-input.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "DAL-input.inc"; sourceTree = "<group>"; };
+		2B4563100E9A5B1200DE6C8C /* DAL-library.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "DAL-library.inc"; sourceTree = "<group>"; };
+		2B4563110E9A5B1200DE6C8C /* DAL-memory.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "DAL-memory.inc"; sourceTree = "<group>"; };
+		2B4563120E9A5B1200DE6C8C /* DAL-missing.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "DAL-missing.inc"; sourceTree = "<group>"; };
+		2B4563130E9A5B1200DE6C8C /* DAL-preferences.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "DAL-preferences.inc"; sourceTree = "<group>"; };
+		2B4563140E9A5B1200DE6C8C /* DAL-resource.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "DAL-resource.inc"; sourceTree = "<group>"; };
+		2B4563150E9A5B1200DE6C8C /* DAL-socket.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "DAL-socket.inc"; sourceTree = "<group>"; };
+		2B4563160E9A5B1200DE6C8C /* DAL-system.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "DAL-system.inc"; sourceTree = "<group>"; };
+		2B4563170E9A5B2800DE6C8C /* SHARK-audio.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = "SHARK-audio.inc"; path = "../common/SHARK-audio.inc"; sourceTree = SOURCE_ROOT; };
+		2B4563180E9A5B2800DE6C8C /* SHARK-display.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = "SHARK-display.inc"; path = "../common/SHARK-display.inc"; sourceTree = SOURCE_ROOT; };
+		2B4563190E9A5B2800DE6C8C /* SHARK-file.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = "SHARK-file.inc"; path = "../common/SHARK-file.inc"; sourceTree = SOURCE_ROOT; };
+		2B45631A0E9A5B2800DE6C8C /* SHARK-input.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = "SHARK-input.inc"; path = "../common/SHARK-input.inc"; sourceTree = SOURCE_ROOT; };
+		2B45631B0E9A5B2800DE6C8C /* SHARK-library.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = "SHARK-library.inc"; path = "../common/SHARK-library.inc"; sourceTree = SOURCE_ROOT; };
+		2B45631C0E9A5B2800DE6C8C /* SHARK-memory.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = "SHARK-memory.inc"; path = "../common/SHARK-memory.inc"; sourceTree = SOURCE_ROOT; };
+		2B45631D0E9A5B2800DE6C8C /* SHARK-preferences.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = "SHARK-preferences.inc"; path = "../common/SHARK-preferences.inc"; sourceTree = SOURCE_ROOT; };
+		2B45631E0E9A5B2800DE6C8C /* SHARK-resource.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = "SHARK-resource.inc"; path = "../common/SHARK-resource.inc"; sourceTree = SOURCE_ROOT; };
+		2B45631F0E9A5B2800DE6C8C /* SHARK-socket.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = "SHARK-socket.inc"; path = "../common/SHARK-socket.inc"; sourceTree = SOURCE_ROOT; };
+		2B4563200E9A5B2800DE6C8C /* SHARK-system.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = "SHARK-system.inc"; path = "../common/SHARK-system.inc"; sourceTree = SOURCE_ROOT; };
+		2B4563210E9A5B2800DE6C8C /* SHARK.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = SHARK.inc; path = ../common/SHARK.inc; sourceTree = SOURCE_ROOT; };
+		2B4563230E9A5B4400DE6C8C /* SHARK-core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "SHARK-core.c"; sourceTree = "<group>"; };
+		2B4563240E9A5B4400DE6C8C /* SHARK-fb-d16.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "SHARK-fb-d16.inc"; sourceTree = "<group>"; };
+		2B4563250E9A5B4400DE6C8C /* SHARK-fb-i8.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "SHARK-fb-i8.inc"; sourceTree = "<group>"; };
+		2B4563260E9A5B4400DE6C8C /* SHARK-fb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "SHARK-fb.c"; sourceTree = "<group>"; };
+		2B4563270E9A5B4400DE6C8C /* SHARK-sfx-pcmmix.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "SHARK-sfx-pcmmix.inc"; sourceTree = "<group>"; };
+		2B4563280E9A5B4400DE6C8C /* SHARK-sfx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "SHARK-sfx.c"; sourceTree = "<group>"; };
+		2B4563290E9A5B4400DE6C8C /* SHARK-string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "SHARK-string.c"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B4562B70E9A598E00DE6C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4562BE0E9A59BD00DE6C8C /* AudioToolbox.framework in Frameworks */,
+				2B4562BF0E9A59CF00DE6C8C /* Foundation.framework in Frameworks */,
+				2B4562C70E9A59FB00DE6C8C /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B4562B90E9A598E00DE6C8C /* libSHARK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				2B45632E0E9A5B9D00DE6C8C /* Source */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B4562BD0E9A59BD00DE6C8C /* AudioToolbox.framework */,
+				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B4563090E9A5AB900DE6C8C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				2B4563210E9A5B2800DE6C8C /* SHARK.inc */,
+				2B4563170E9A5B2800DE6C8C /* SHARK-audio.inc */,
+				2B4563180E9A5B2800DE6C8C /* SHARK-display.inc */,
+				2B4563190E9A5B2800DE6C8C /* SHARK-file.inc */,
+				2B45631A0E9A5B2800DE6C8C /* SHARK-input.inc */,
+				2B45631B0E9A5B2800DE6C8C /* SHARK-library.inc */,
+				2B45631C0E9A5B2800DE6C8C /* SHARK-memory.inc */,
+				2B45631D0E9A5B2800DE6C8C /* SHARK-preferences.inc */,
+				2B45631E0E9A5B2800DE6C8C /* SHARK-resource.inc */,
+				2B45631F0E9A5B2800DE6C8C /* SHARK-socket.inc */,
+				2B4563200E9A5B2800DE6C8C /* SHARK-system.inc */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		2B4563220E9A5B4400DE6C8C /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B4563230E9A5B4400DE6C8C /* SHARK-core.c */,
+				2B4563240E9A5B4400DE6C8C /* SHARK-fb-d16.inc */,
+				2B4563250E9A5B4400DE6C8C /* SHARK-fb-i8.inc */,
+				2B4563260E9A5B4400DE6C8C /* SHARK-fb.c */,
+				2B4563270E9A5B4400DE6C8C /* SHARK-sfx-pcmmix.inc */,
+				2B4563280E9A5B4400DE6C8C /* SHARK-sfx.c */,
+				2B4563290E9A5B4400DE6C8C /* SHARK-string.c */,
+			);
+			name = extensions;
+			path = ../extensions;
+			sourceTree = SOURCE_ROOT;
+		};
+		2B45632E0E9A5B9D00DE6C8C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2B4562FF0E9A5A9700DE6C8C /* DAL.m */,
+				2B45630C0E9A5B1200DE6C8C /* DAL-audio.inc */,
+				2B45630D0E9A5B1200DE6C8C /* DAL-display.inc */,
+				2B45630E0E9A5B1200DE6C8C /* DAL-file.inc */,
+				2B45630F0E9A5B1200DE6C8C /* DAL-input.inc */,
+				2B4563100E9A5B1200DE6C8C /* DAL-library.inc */,
+				2B4563110E9A5B1200DE6C8C /* DAL-memory.inc */,
+				2B4563120E9A5B1200DE6C8C /* DAL-missing.inc */,
+				2B4563130E9A5B1200DE6C8C /* DAL-preferences.inc */,
+				2B4563140E9A5B1200DE6C8C /* DAL-resource.inc */,
+				2B4563150E9A5B1200DE6C8C /* DAL-socket.inc */,
+				2B4563160E9A5B1200DE6C8C /* DAL-system.inc */,
+				2B4563220E9A5B4400DE6C8C /* extensions */,
+				2B4563090E9A5AB900DE6C8C /* common */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B4562B50E9A598E00DE6C8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B4562B80E9A598E00DE6C8C /* SHARK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B4562BC0E9A59B900DE6C8C /* Build configuration list for PBXNativeTarget "SHARK" */;
+			buildPhases = (
+				2B4562B50E9A598E00DE6C8C /* Headers */,
+				2B4562B60E9A598E00DE6C8C /* Sources */,
+				2B4562B70E9A598E00DE6C8C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SHARK;
+			productName = SHARK;
+			productReference = 2B4562B90E9A598E00DE6C8C /* libSHARK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SHARK" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B4562B80E9A598E00DE6C8C /* SHARK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B4562B60E9A598E00DE6C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4563000E9A5A9700DE6C8C /* DAL.m in Sources */,
+				2B45632A0E9A5B8700DE6C8C /* SHARK-core.c in Sources */,
+				2B45632B0E9A5B8700DE6C8C /* SHARK-fb.c in Sources */,
+				2B45632C0E9A5B8700DE6C8C /* SHARK-sfx.c in Sources */,
+				2B45632D0E9A5B8700DE6C8C /* SHARK-string.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2B4562BA0E9A598E00DE6C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_UNROLL_LOOPS = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = SHARK;
+			};
+			name = Debug;
+		};
+		2B4562BB0E9A598E00DE6C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = SHARK;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = 4.0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.4;
+				VALID_ARCHS = "i386 ppc";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = 4.0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.4;
+				VALID_ARCHS = "i386 ppc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B4562BC0E9A59B900DE6C8C /* Build configuration list for PBXNativeTarget "SHARK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B4562BA0E9A598E00DE6C8C /* Debug */,
+				2B4562BB0E9A598E00DE6C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SHARK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
